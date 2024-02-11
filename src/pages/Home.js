@@ -23,6 +23,7 @@ import { ParentContainer, Title, Subheading, Link, Heading } from "../styles";
 import Resume from "../components/Resume";
 import { Element } from "react-scroll";
 import { styled } from "styled-components";
+import Animation from "../components/Animation";
 
 const Home = () => {
   const [projectCards] = useState([
@@ -520,11 +521,13 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <ProjectCard
-        projectCards={projectCards.filter(
-          (projectCard) => projectCard.section === "one"
-        )}
-      />
+      <Animation>
+        <ProjectCard
+          projectCards={projectCards.filter(
+            (projectCard) => projectCard.section === "one"
+          )}
+        />
+      </Animation>
       <CentreContainer>
         <CallToAction>
           Check out the projects <br />

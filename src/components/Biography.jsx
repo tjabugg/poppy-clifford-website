@@ -130,7 +130,7 @@ const BiographySections = () => {
           onMouseOver={() => setAttached(2)}
           onMouseOut={() => setAttached(null)}
         >
-          She has continued the training on the Diploma in Group Analysis 
+          She has continued the training on the Diploma in Group Analysis
           <sup> [4]</sup>
         </span>{" "}
         , and is on placement as a group work practitioner in mental health
@@ -168,6 +168,10 @@ export const Gif = styled.img`
   position: fixed;
   pointer-events: none;
   width: 20vw;
+
+  @media (max-width: 768px) {
+    width: 40vw;
+  }
 `;
 
 export const Biography = styled(Heading)`

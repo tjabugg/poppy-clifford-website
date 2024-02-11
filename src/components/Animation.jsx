@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import styled from "styled-components";
 
-const Animation = ({ children, wrapperElement = ImageContainer }) => {
+const Animation = ({ children, wrapperElement = "div" }) => {
   const Component = wrapperElement;
   let compRef = useRef(null);
   useEffect(() => {

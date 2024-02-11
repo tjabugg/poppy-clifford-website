@@ -97,11 +97,16 @@ export const CTA = styled(ParentContainer)`
   padding: 24px;
   margin: 0px;
   background-color: #426bff;
-  border-radius: 100px;
+  border-radius: 20px;
   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &:hover {
-    border-radius: 20px;
+    border-radius: 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    /* border-radius: 12px; */
   }
 `;
 

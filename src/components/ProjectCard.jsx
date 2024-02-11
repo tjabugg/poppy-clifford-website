@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { MyImage, GridContainer, Link } from "../styles";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Animation from "./Animation";
+// import Animation from "./Animation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,7 +12,7 @@ const ProjectCards = ({ projectCards }) => {
   return (
     <GridContainer>
       {projectCards.map((projectCard) => (
-        <Animation
+        <ImageContainer
           key={projectCard.id}
           style={{
             gridColumn: projectCard.gridColumn,
@@ -56,7 +56,7 @@ const ProjectCards = ({ projectCards }) => {
               ></MyVideo>
             ) : null}
           </Link>
-        </Animation>
+        </ImageContainer>
       ))}
     </GridContainer>
   );
