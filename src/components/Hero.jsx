@@ -137,11 +137,6 @@ export const UpdateContainer = styled.div`
   padding: 28px;
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-  &:hover {
-    transform: scale(0.92);
-    opacity: 0.5;
-  }
-
   :before,
   :after {
     content: "";

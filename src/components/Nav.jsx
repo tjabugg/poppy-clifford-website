@@ -35,13 +35,13 @@ const Nav = () => (
           <span>n</span>
           <span>f</span>
           <span>o</span>
-          <span>r</span>
+          {/* <span>r</span>
           <span>m</span>
           <span>a</span>
           <span>t</span>
           <span>i</span>
           <span>o</span>
-          <span>n</span>
+          <span>n</span> */}
         </div>
       </Link>
 

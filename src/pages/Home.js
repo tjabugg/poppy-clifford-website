@@ -679,6 +679,6 @@ export const Span = styled(Link)`
     opacity: 0.2;
   }
   @media (max-width: 768px) {
-    font-size: 40px;
+    font-size: 38px;
   }
 `;
