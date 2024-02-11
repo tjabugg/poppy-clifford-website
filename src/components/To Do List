@@ -1,0 +1,6 @@
+1. Add gsap to project cards
+2. Add anchor property to navigation
+3. Check every media query
+4. Make sure all images have an alt
+5. Make sure all pages have meta
+6. Try wrapping the project cards in a gsap on the home pages
