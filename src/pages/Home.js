@@ -25,7 +25,8 @@ import { Element } from "react-scroll";
 import { styled } from "styled-components";
 import Animation from "../components/Animation";
 // import React from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const [projectCards] = useState([
