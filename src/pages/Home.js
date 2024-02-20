@@ -24,6 +24,8 @@ import Resume from "../components/Resume";
 import { Element } from "react-scroll";
 import { styled } from "styled-components";
 import Animation from "../components/Animation";
+// import React from "react";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [projectCards] = useState([
@@ -520,6 +522,38 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Poppy Clifford Productions | Projects</title>
+        <meta
+          name="description"
+          content="Poppy Clifford is a freelance director based in London, with a special interest in new writing, international and interdisciplinary work."
+        />
+        <meta
+          name="keywords"
+          content="freelance director, London, theatre, award winning, interdisciplinary, new writing"
+        />
+        <meta name="author" content="Poppy Clifford" />
+        <meta
+          property="og:title"
+          content="Poppy Clifford Productions | Projects"
+        />
+        <meta
+          property="og:description"
+          content="Poppy Clifford is a freelance director based in London, with a special interest in new writing, international and interdisciplinary work."
+        />
+        <meta property="og:image" content={Bluebeard} />
+        <meta property="og:url" content="https://poppyclifford.com/projects" />
+        <meta
+          name="twitter:title"
+          content="Poppy Clifford Productions | Projects"
+        />
+        <meta
+          name="twitter:description"
+          content="Poppy Clifford is a freelance director based in London, with a special interest in new writing, international and interdisciplinary work."
+        />
+        <meta name="twitter:image" content={Bluebeard} />
+        <meta name="twitter:card" content={Bluebeard} />
+      </Helmet>
       <Hero />
       <Animation>
         <ProjectCard

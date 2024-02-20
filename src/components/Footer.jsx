@@ -46,6 +46,12 @@ const Footer = () => (
         >
           Instagram
         </FooterLink>
+        <FooterLink
+          href="https://www.instagram.com/poppy.felicity/"
+          target="_blank"
+        >
+          Design and Development by Thomas Bugg
+        </FooterLink>
         {/* <FooterLink>+44 (0) 7894657757</FooterLink> */}
       </NavContainer>
 
