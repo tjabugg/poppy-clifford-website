@@ -24,9 +24,10 @@ import { Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 const App = () => {
+  const helmetContext = {};
   return (
     <>
-      <HelmetProvider>
+      <HelmetProvider context={helmetContext}>
         <GlobalStyle />
         <Nav />
         <Routes>
