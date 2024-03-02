@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { MyImage, GridContainer, Link } from "../styles";
 import { gsap } from "gsap";
@@ -9,11 +9,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Destructure blogs and title directly from the props
 const ProjectCards = ({ projectCards }) => {
+  const imageContainers = useRef([]);
+
+  useEffect(() => {
+    // Set up GSAP animations once the component is mounted
+    imageContainers.current.forEach((container) => {
+      // Use GSAP to animate opacity properties
+      gsap.from(container, {
+        opacity: 0, // Start with 0 opacity
+        duration: 1,
+        scrollTrigger: {
+          trigger: container, // Set the trigger element
+          start: "top 90%", // Start the animation when the top of the element reaches the 90% of the viewport
+        },
+      });
+    });
+  }, []); // Empty dependency array ensures the useEffect runs only once after the initial render
+
   return (
     <GridContainer>
-      {projectCards.map((projectCard) => (
+      {projectCards.map((projectCard, index) => (
         <ImageContainer
           key={projectCard.id}
+          ref={(el) => (imageContainers.current[index] = el)} // Store the reference to the ImageContainer element
           style={{
             gridColumn: projectCard.gridColumn,
           }}
@@ -134,21 +152,3 @@ export const MyVideo = styled.video`
   display: block;
   object-fit: cover;
 `;
-
-// const imgRef = useRef(null);
-
-// useEffect(() => {
-//   const el = imgRef.current.children[1];
-//   gsap.fromTo(
-//     el,
-//     { opacity: 0 },
-//     {
-//       opacity: 1,
-//       duration: 1,
-//       scrollTrigger: {
-//         trigger: el,
-//         start: "top 80%",
-//       },
-//     }
-//   );
-// }, []);

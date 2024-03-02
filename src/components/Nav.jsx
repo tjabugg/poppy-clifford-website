@@ -1,7 +1,6 @@
 import React from "react";
 import { PrimaryButton, NavContainer } from "../styles";
 import styled from "styled-components";
-import { Link } from "react-scroll";
 
 import "./Hover.css";
 
@@ -22,28 +21,13 @@ const Nav = () => (
         <span>t</span>
         <span>s</span>
       </a>
-      <Link
-        activeClass="active"
-        to="example-destination"
-        spy={true}
-        smooth={true}
-        offset={-100}
-        duration={2000}
-      >
-        <div className="wave-hover" style={{ display: "flex" }}>
-          <span>I</span>
-          <span>n</span>
-          <span>f</span>
-          <span>o</span>
-          {/* <span>r</span>
-          <span>m</span>
-          <span>a</span>
-          <span>t</span>
-          <span>i</span>
-          <span>o</span>
-          <span>n</span> */}
-        </div>
-      </Link>
+
+      <a className="wave-hover" href="/information">
+        <span>I</span>
+        <span>n</span>
+        <span>f</span>
+        <span>o</span>
+      </a>
 
       <a className="wave-hover" href="/ongoing">
         <span>O</span>
@@ -68,10 +52,9 @@ export const HeaderContainer = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  width: 500px;
+  /* width: 500px; */
   margin: 24px auto;
   box-sizing: border-box;
-  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;

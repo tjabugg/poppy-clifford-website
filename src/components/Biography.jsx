@@ -43,8 +43,12 @@ const BiographySections = () => {
     <ParentContainer
       style={{
         gap: "24px",
+        paddingTop: "85px",
       }}
     >
+      <HeadshotContainer>
+        <MyImage src={Headshot} />
+      </HeadshotContainer>
       {/* If the attached state is not empty, display the image, otherwise leave null*/}
       {attached !== null ? (
         <Gif
@@ -127,7 +131,7 @@ const BiographySections = () => {
         Poppy to begin some psychological training, so she completed a
         Foundation training in Group Analysis.
         <span
-          onMouseOver={() => setAttached(2)}
+          onMouseOver={() => setAttached(3)}
           onMouseOut={() => setAttached(null)}
         >
           She has continued the training on the Diploma in Group Analysis
@@ -138,7 +142,7 @@ const BiographySections = () => {
         also a response to her work at Stockwell Park Community Trust, where she
         has worked for 6 years as a key member of staff,{" "}
         <span
-          onMouseOver={() => setAttached(2)}
+          onMouseOver={() => setAttached(4)}
           onMouseOut={() => setAttached(null)}
         >
           as well as setting up their youth program, Stockwell Park Youth
@@ -146,9 +150,6 @@ const BiographySections = () => {
         </span>{" "}
         .
       </Biography>
-      <HeadshotContainer>
-        <MyImage src={Headshot} />
-      </HeadshotContainer>
     </ParentContainer>
   );
 };

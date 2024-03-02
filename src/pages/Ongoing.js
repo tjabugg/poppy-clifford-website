@@ -24,6 +24,7 @@ import Home22 from "../assets/images/home/home_22.jpg";
 import Home23 from "../assets/images/home/home_23.jpg";
 import Home24 from "../assets/images/home/home_24.jpg";
 import Pinterest from "../components/Pinterest";
+import Biography from "../components/Biography";
 
 const Ongoing = () => {
   const [pinterestCards] = useState([

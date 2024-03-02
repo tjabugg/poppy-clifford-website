@@ -17,7 +17,7 @@ import DeathOfAHunter from "./pages/DeathOfAHunter";
 import TheThreepennyOpera from "./pages/TheThreepennyOpera";
 import Ongoing from "./pages/Ongoing";
 import Kula from "./pages/Kula";
-import Biography from "./components/Biography";
+import Information from "./pages/Information";
 import Footer from "./components/Footer";
 import { GlobalStyle } from "./styles";
 import { Routes, Route } from "react-router-dom";
@@ -32,7 +32,7 @@ const App = () => {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/biography" element={<Biography />} />
+          <Route path="/information" element={<Information />} />
           <Route path="/ongoing" element={<Ongoing />} />
           <Route path="/dugsidayz" element={<DugsiDayz />} />
           <Route path="/thatoldblackmagic" element={<ThatOldBlackMagic />} />
