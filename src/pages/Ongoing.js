@@ -24,61 +24,60 @@ import Home22 from "../assets/images/home/home_22.jpg";
 import Home23 from "../assets/images/home/home_23.jpg";
 import Home24 from "../assets/images/home/home_24.jpg";
 import Pinterest from "../components/Pinterest";
-import Biography from "../components/Biography";
 
 const Ongoing = () => {
   const [pinterestCards] = useState([
     {
       image: Home01,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 1,
     },
     {
       image: Home02,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 2,
     },
     {
       image: Home03,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 3,
       span: "span 2",
     },
     {
       image: Home04,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 4,
     },
     {
       image: Home05,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 5,
     },
     {
       image: Home06,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 6,
       span: "span 2",
     },
     {
       image: Home07,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 7,
     },
     {
       image: Home08,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 8,
     },
 
     {
       image: Home09,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 9,
     },
     {
       image: Home10,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 10,
     },
     {
@@ -88,12 +87,12 @@ const Ongoing = () => {
     },
     {
       image: Home12,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 12,
     },
     {
       image: Home13,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 13,
     },
     {
@@ -103,55 +102,55 @@ const Ongoing = () => {
     },
     {
       image: Home15,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 15,
       span: "span 2",
     },
     {
       image: Home16,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 16,
     },
     {
       image: Home17,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 17,
     },
     {
       image: Home18,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 18,
     },
     {
       image: Home19,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 19,
     },
     {
       image: Home20,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 20,
     },
     {
       image: Home21,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 21,
       span: "span 2",
     },
     {
       image: Home22,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 22,
     },
     {
       image: Home23,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 23,
       span: "span 2",
     },
     {
       image: Home24,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 24,
     },
   ]);
