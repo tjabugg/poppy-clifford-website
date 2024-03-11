@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import Hero from "../components/Hero";
 import HomeProduction from "../assets/images/home/home_01.jpg";
-import Biography from "../components/Biography";
 import Bluebeard from "../assets/images/bluebeard/bluebeard_16.jpg";
 import AMidsummerNightsDreamHome from "../assets/images/a_midsummers_night_dream_home/midsummers_night_dream_home_06.jpg";
 import Endurance from "../assets/images/endurance/endurance_01.jpg";
@@ -16,8 +15,7 @@ import MysteriousBruises from "../assets/images/mysterious_bruises/mysterious_br
 import DeathOfAHunter from "../assets/images/death_of_a_hunter/death_of_a_hunter_02.jpg";
 import TheThreepennyOpera from "../assets/images/the_threepenny_opera/threepenny_opera_03.jpg";
 import Kula from "../assets/images/kula_nach_europa/kula_nach_europa_01.jpg";
-import { ParentContainer, Title, Subheading, Link, Heading } from "../styles";
-import Resume from "../components/Resume";
+import { Link, Heading } from "../styles";
 import { styled } from "styled-components";
 import { Helmet } from "react-helmet-async";
 
@@ -564,99 +562,6 @@ const Home = () => {
         projectCards={projectCards.filter(
           (projectCard) => projectCard.section === "two"
         )}
-      />
-      <Biography id="specificElement" />
-      <ParentContainer>
-        <Title>Information</Title>
-        <Subheading>Qualifications and Training</Subheading>
-      </ParentContainer>
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.id === 1
-        )}
-        fontWeight={"600"}
-      />
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) =>
-            resumeSection.section === "Qualifications and Training"
-        )}
-        fontWeight={"400"}
-      />
-      <ParentContainer>
-        <Subheading>Experience</Subheading>
-      </ParentContainer>
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.id === 6
-        )}
-        fontWeight={"600"}
-      />
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.section === "Experience"
-        )}
-        fontWeight={"400"}
-      />
-      <ParentContainer>
-        <Subheading>Directing Credits</Subheading>
-      </ParentContainer>
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.id === 10
-        )}
-        fontWeight={"600"}
-      />
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.section === "Directing Credits"
-        )}
-        fontWeight={"400"}
-      />
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.id === 24
-        )}
-        fontWeight={"600"}
-      />
-      <ParentContainer>
-        <Subheading>Associate Credits</Subheading>
-      </ParentContainer>
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.section === "Associate Credits"
-        )}
-        fontWeight={"400"}
-      />
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.id === 29
-        )}
-        fontWeight={"600"}
-      />
-      <ParentContainer>
-        <Subheading>Assistant Credits</Subheading>
-      </ParentContainer>
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.section === "Assistant Credits"
-        )}
-        fontWeight={"400"}
-      />
-      <ParentContainer>
-        <Subheading>Film and Podcast</Subheading>
-      </ParentContainer>
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.id === 44
-        )}
-        fontWeight={"600"}
-      />
-      <Resume
-        resumeSections={resumeSections.filter(
-          (resumeSection) => resumeSection.section === "Film/Podcast Credits"
-        )}
-        fontWeight={"400"}
       />
     </>
   );

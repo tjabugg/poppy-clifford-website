@@ -82,7 +82,7 @@ const Ongoing = () => {
     },
     {
       image: Home11,
-      caption: "Feb 2023",
+      // caption: "Feb 2023",
       id: 11,
     },
     {
