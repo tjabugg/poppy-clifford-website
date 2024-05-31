@@ -47,10 +47,11 @@ const HeroSections = ({ heroSections }) => {
                 fontWeight: "400",
               }}
             >
-              Dugsi Dayz returns to NDT after sold-out previews in July and a
-              smash-hit Edinburgh Fringe run at Underbelly, where it won the BBC
-              Writersroom Popcorn Award, rave reviews, and was named a breakout
-              hit of the festival by Rolling Stone
+              Dugsi Dayz sells out run at the Royal Court Theatre after sold-out
+              previews in July and a smash-hit Edinburgh Fringe run at
+              Underbelly, where it won the BBC Writersroom Popcorn Award, rave
+              reviews, and was named a breakout hit of the festival by Rolling
+              Stone
             </Update>
           </UpdateContainer>
 
